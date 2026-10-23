@@ -31,7 +31,6 @@ while true; do
         fi
 
         printf '%s,%s,%s,%s\n' "$TIMESTAMP" "$TARGET" "$STATUS" "$LATENCY" >> "$LOG_FILE"
-        echo "$TIMESTAMP | $TARGET | $STATUS | ${LATENCY} ms"
+        echo "$TIMESTAMP | $TARGET | $STATUS | Latency: $LATENCY"
     done
-    sleep "$INTERVAL"
-done
+    sle
